@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct AppView: View {
+    init() {
+    UITabBar.appearance().backgroundColor = UIColor(named: "ColorAppearanceAdaptive")
+    }
     var body: some View {
+        
         TabView{
             AvocadosView()
                 .tabItem {
