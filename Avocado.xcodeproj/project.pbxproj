@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		814F8DAF2B9CB5FC00264C6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814F8DAE2B9CB5FC00264C6A /* LaunchScreen.storyboard */; };
 		816CAC702B9BB059000F0074 /* AvocadoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CAC6F2B9BB059000F0074 /* AvocadoApp.swift */; };
 		816CAC722B9BB059000F0074 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CAC712B9BB059000F0074 /* ContentView.swift */; };
 		816CAC742B9BB05B000F0074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816CAC732B9BB05B000F0074 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		814F8DAE2B9CB5FC00264C6A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		816CAC6C2B9BB059000F0074 /* Avocado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		816CAC6F2B9BB059000F0074 /* AvocadoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadoApp.swift; sourceTree = "<group>"; };
 		816CAC712B9BB059000F0074 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 		816CAC632B9BB059000F0074 = {
 			isa = PBXGroup;
 			children = (
+				814F8DAE2B9CB5FC00264C6A /* LaunchScreen.storyboard */,
 				816CAC6E2B9BB059000F0074 /* Avocado */,
 				816CAC6D2B9BB059000F0074 /* Products */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814F8DAF2B9CB5FC00264C6A /* LaunchScreen.storyboard in Resources */,
 				816CAC772B9BB05B000F0074 /* Preview Assets.xcassets in Resources */,
 				816CAC742B9BB05B000F0074 /* Assets.xcassets in Resources */,
 			);
