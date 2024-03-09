@@ -25,17 +25,18 @@ struct ContentView: View {
                    }//Header
               }//ScrollView
                 //MARK: - DISHES
-               Text("Avocado Dishes")
-                   .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                   .modifier(TitleModifier())
+               
+               Title(title: "Avocado Dishes")
+               
                DishesView()
                    .frame(maxWidth: 640)
                 
                 
                 //MARK: - Footer
                 VStack(alignment: .center, spacing: 20){
-                    Text("All About Avocados")
-                        .modifier(TitleModifier())
+                    
+                    Title(title: "All About Avocados")
+                   
                     Text("Everything you wanted to know about avocado but were too afraid to ask")
                         .font(.system(.body, design: .serif))
                         .multilineTextAlignment(.center)
