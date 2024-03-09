@@ -11,11 +11,12 @@ struct FactsView: View {
     //MARK: - Properties
     
     var fact: Fact
-    var gradient:[Color] = [.colorGreenMedium,.colorGreenLight  ]
-    var gradient1: LinearGradient = LinearGradient(gradient: Gradient(colors: [.colorGreenMedium,.colorGreenLight  ]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
+    let gradient:[Color] = [.colorGreenMedium,.colorGreenLight  ]
+     
     
     var body: some View {
         ZStack{
+            
             Text(fact.content)
                 .padding(.leading,55)
                 .padding(.trailing,10)
