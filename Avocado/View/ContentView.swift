@@ -11,6 +11,7 @@ struct ContentView: View {
     //MARK: - PROPERTIES
     var headers: [Header] = headersData
     var factsData: [Fact] = facts
+    var recipes: [Recipe] = recipesData
     
     //MARK: - BODY
     var body: some View {
@@ -45,7 +46,16 @@ struct ContentView: View {
                        }
                    }//Hstack
                }//Facts Scroll
-                
+                //MARK: - Recipes
+               Title(title: "Avocado Recipes")
+               
+               VStack(alignment:.center, spacing: 20){
+                   ForEach(recipes) { recipe in
+                       RecipeCardView(recipe: recipe)
+                   }.frame(maxWidth: 640)
+                       .padding(.horizontal)
+               }//VStack
+               
                 //MARK: - Footer
                 VStack(alignment: .center, spacing: 20){
                     
