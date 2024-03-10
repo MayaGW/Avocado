@@ -10,7 +10,8 @@ import SwiftUI
 struct RecipeCardView: View {
     //MARK: - PROERTIES
     var recipe: Recipe
-    
+    var hapticImpact = UIImpactFeedbackGenerator(style: .heavy)
+    @State private var showModel: Bool = false
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Image(recipe.image)
@@ -25,7 +26,13 @@ struct RecipeCardView: View {
                             .foregroundColor(.white)
                             .imageScale(.small)
                         .shadow(color: .colorBlackTransparetLight, radius: 2, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
-                             
+                        .onTapGesture {
+                            hapticImpact.impactOccurred()
+                            showModel = true
+                        }
+                        .sheet(isPresented: $showModel, content: {
+                            RecipeDetailView(recipe: recipe)
+                        })
                         }//Hstack
                         Spacer()
                     }//VStack

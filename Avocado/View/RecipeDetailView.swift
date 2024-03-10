@@ -11,6 +11,7 @@ struct RecipeDetailView: View {
     //MARK: - PROPERTIES
     @State private var pulsate: Bool = false
     var recipe: Recipe
+    @Environment(\.presentationMode) var presentationMode
     //MARK: - BODY
     var body: some View {
         
@@ -75,24 +76,26 @@ struct RecipeDetailView: View {
         }//SCROLLVIEW
         .edgesIgnoringSafeArea(.top)
         .overlay(
-            HStack {
-                Spacer()
-                VStack {
-                    Button(action: {
-                        
-                    }, label: {
-                       Image(systemName: "chevron.down.circle.fill")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .foregroundColor(.white)
-                            .shadow(radius: 4)
-                            .opacity(pulsate ? 1 : 0.6)
-                            .scaleEffect(pulsate ? 1.2 : 0.8, anchor: .center)
-                            .animation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true))
-                    }).padding(.trailing,20)
-                        .padding(.top,24)
-                    Spacer()
-                }
+          HStack {
+            Spacer()
+            VStack {
+              Button(action: {
+                // ACTION
+                self.presentationMode.wrappedValue.dismiss()
+              }, label: {
+                Image(systemName: "chevron.down.circle.fill")
+                  .font(.title)
+                  .foregroundColor(Color.white)
+                  .shadow(radius: 4)
+                  .opacity(self.pulsate ? 1 : 0.6)
+                  .scaleEffect(self.pulsate ? 1.2 : 0.8, anchor: .center)
+                  .animation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: pulsate)
+              })
+                .padding(.trailing, 20)
+                .padding(.top, 24)
+              Spacer()
             }
+          }
         )
         .onAppear(){
             pulsate.toggle()
