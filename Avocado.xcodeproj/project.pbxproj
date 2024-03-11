@@ -32,6 +32,7 @@
 		816B5F492B9E015A002C7A56 /* RipeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816B5F482B9E015A002C7A56 /* RipeningView.swift */; };
 		816B5F4B2B9E04A3002C7A56 /* RipeningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816B5F4A2B9E04A3002C7A56 /* RipeningModel.swift */; };
 		816B5F4D2B9E069D002C7A56 /* RipeningData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816B5F4C2B9E069D002C7A56 /* RipeningData.swift */; };
+		816B5F4F2B9F0015002C7A56 /* FormLeftRowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816B5F4E2B9F0015002C7A56 /* FormLeftRowComponent.swift */; };
 		816CAC702B9BB059000F0074 /* AvocadoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CAC6F2B9BB059000F0074 /* AvocadoApp.swift */; };
 		816CAC722B9BB059000F0074 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CAC712B9BB059000F0074 /* ContentView.swift */; };
 		816CAC742B9BB05B000F0074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816CAC732B9BB05B000F0074 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		816B5F482B9E015A002C7A56 /* RipeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningView.swift; sourceTree = "<group>"; };
 		816B5F4A2B9E04A3002C7A56 /* RipeningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningModel.swift; sourceTree = "<group>"; };
 		816B5F4C2B9E069D002C7A56 /* RipeningData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningData.swift; sourceTree = "<group>"; };
+		816B5F4E2B9F0015002C7A56 /* FormLeftRowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormLeftRowComponent.swift; sourceTree = "<group>"; };
 		816CAC6C2B9BB059000F0074 /* Avocado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		816CAC6F2B9BB059000F0074 /* AvocadoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadoApp.swift; sourceTree = "<group>"; };
 		816CAC712B9BB059000F0074 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				81575A742B9D02F100431459 /* RecipeRow.swift */,
 				816B5F422B9DBD95002C7A56 /* RatingView.swift */,
 				816B5F442B9DBE17002C7A56 /* CookingView.swift */,
+				816B5F4E2B9F0015002C7A56 /* FormLeftRowComponent.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				814F8DB82B9CB97100264C6A /* SettingsView.swift in Sources */,
+				816B5F4F2B9F0015002C7A56 /* FormLeftRowComponent.swift in Sources */,
 				816B5F452B9DBE17002C7A56 /* CookingView.swift in Sources */,
 				816B5F4B2B9E04A3002C7A56 /* RipeningModel.swift in Sources */,
 				81575A6F2B9CFC6700431459 /* RecipeModel.swift in Sources */,
